@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=devicr-width, initial-scale=1.0">
+        <title>Music__Player-App</title>
+        <link rel="stylesheet" href="F:\Miniproject\music_player\Music_Player.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+         integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <div class="main_div">
+            <div class="music_container">
+                <h2 id="title">Arebic Song</h2>
+                <h3 id="artist">Omkar Ingawale</h3>
+                <div class="img_container">
+                    <img src="F:\Miniproject\music_player\images\thapa1.jpg" alt="">
+                </div>
+                <audio src="F:\Miniproject\music_player\music\thapa1.mp3" controls></audio>
+
+            <div class="progressbar_container" id="progress_container">
+                <div class="progress_duration_meter">
+                    <div id="current_time">0:00</div>
+                    <div id="duration">2:44</div>
+                </div>
+                <div class="progress_div" id="progress_div">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+
+                <div class="music_controls">
+                    <i class="fas fa-backward" id="prev" title="Previous"></i>
+                    <i class="fas fa-play main_button" id="play" title="Play"></i>
+                    <i class="fas fa-forward" id="next" title="Next"></i>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+    <script src="F:\Miniproject\music_player\Music_Player.js"></script>
+    </body>
+</html>

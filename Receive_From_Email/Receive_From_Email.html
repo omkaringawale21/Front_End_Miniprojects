@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta hhtp-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Receive_From_Email</title>
+        <link rel="stylesheet" href="F:\Miniproject\Receive_From_Email\Receive_From_Email.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+         integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false">
+                <h3>GET IN TOUCH</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Email ID" required>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                <textarea id="message" rows="4" placeholder="How can we help you"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+
+        <script src="F:\Miniproject\Receive_From_Email\Receive_From_Email.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                    Email.send({
+                    Host : "smtp.gmail.com",
+                    Username : "omkaringawale21@gmail.com",
+                    Password : "***********",
+                    To : "omkaringawale2108@gmail.com",
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact From Enquiry",
+                    Body : "Name: " + document.getElementById("name").value
+                         + "<br> Email: " + document.getElementById("email").value
+                         + "<br> Phone No.: " + document.getElementById("phone").value
+                         + "<br> Message: " + document.getElementById("message").value
+               }).then(
+                  message => alert("Message Send Successfully")
+               );
+            }
+        </script>
+    </body>
+</html> 
