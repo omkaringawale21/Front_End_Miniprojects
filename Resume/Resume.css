@@ -70,7 +70,7 @@ body{
 }
 
 .profileText h2 span{
-    font-size: 0.8em;
+    font-size: 20px;
     font-weight: 300;
 }
 
@@ -172,6 +172,7 @@ i{
     letter-spacing: 1px;
     margin-bottom: 10px;
     font-size: 35px;
+    text-shadow: 12px 12px 14px rgba(0, 0, 0, 0.25);
 }
 
 p{
@@ -205,12 +206,12 @@ p{
 
 .box h4{
     color: #333;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .text h4{
     color: #333;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .skills .box div{
