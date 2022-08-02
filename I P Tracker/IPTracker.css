@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background: #8e44ad;
+}
+
+.main-container{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.loader1{
+    display: flex;
+    flex-direction: row;
+    width: 10px;
+    height: 35px;
+    background: #fff;
+    margin: 3px;
+    animation: loading 1s ease-in-out infinite alternate;
+}
+
+.loader2{
+    display: flex;
+    flex-direction: row;
+    width: 10px;
+    height: 35px;
+    background: #fff;
+    margin: 3px;
+    animation: loading 1s ease-in-out infinite alternate 0.5s;
+}
+
+.loader3{
+    display: flex;
+    flex-direction: row;
+    width: 10px;
+    height: 35px;
+    background: #fff;
+    margin: 3px;
+    animation: loading 1s ease-in-out infinite alternate 0.8s;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 800;
+}
+
+.ip-display{
+    font-size: 40px;
+}
+
+.location-diaplay{
+    font-size: 40px;
+}
+
+.geo-location-diaplay{
+    font-size: 40px;
+}
+
+.btn{
+    position: relative;
+    top: 0;
+    left: 30px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: #353b48;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    transition: 0.8s;
+}
+
+.btn:hover{
+    color: #353b48;
+    background: #badc58;
+    cursor: pointer;
+}
+
+@keyframes loading{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+    }
+}

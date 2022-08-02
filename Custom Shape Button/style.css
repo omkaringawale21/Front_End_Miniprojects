@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,300;1,500&family=My+Soul&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgb(236, 81, 172), rgb(245, 117, 12));
+}
+
+a{
+    position: relative;
+    padding: 15px 40px;
+    background: #fff;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    clip-path: polygon(88% 0, 100% 50%, 88% 100%,
+     0% 100%, 7% 50%, 0% 0%);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+}
+
+a:hover{
+    background: #14e4b7;
+    color: #fff;
+    letter-spacing: 4px;
+    clip-path: polygon(100% 0%, 88% 50%, 100% 100%,
+     11% 100%, 0% 50%, 12% 0);
+    cursor: pointer;
+}

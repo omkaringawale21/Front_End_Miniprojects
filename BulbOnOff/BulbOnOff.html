@@ -1,0 +1,69 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BulbOnOff</title>
+
+    <Style>
+
+        body{
+            background-color: black;
+        }
+
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn{
+            display: block;
+            margin: auto;
+            border: 2px solid white;
+            background-color: yellow;
+            height: 40px;
+            width: 80px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .btn:hover{
+            background-color: rgb(235, 165, 74);
+        }
+
+    </Style>
+</head>
+<body>
+    
+    <img src="bulboff.jpg" id="bulb" class="center" alt="">
+    <button id="btn" class="btn">Turn On</button>
+
+
+
+
+    
+    <script>
+
+        let btn = document.querySelector("#btn");
+        let bulb = document.querySelector("#bulb");
+        btn.addEventListener('click', toggleOnOff);
+
+        function toggleOnOff(e){
+            if (btn.textContent.includes("On")) {
+                bulb.src = "bulbon.jpg";
+                btn.textContent = "Turn Off";
+            }else {
+                bulb.src = "bulboff.jpg";
+                btn.textContent = "Turn On";
+            }
+            
+        }
+
+    </script>
+</body>
+</html>
