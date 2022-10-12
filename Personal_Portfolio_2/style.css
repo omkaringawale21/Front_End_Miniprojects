@@ -477,6 +477,22 @@ header .navbar ul li a:hover{
     html{
         font-size: 50%;
     }
+    
+    .heading{
+        margin: 0 3rem;
+    }
+    .about .row .counter .box{
+        width: 100%;
+    }
+    .education .box-container .box{
+        width: 100%;
+    }
+    .education .box-container .box{
+        width: 100%;
+    }
+    .contact .row form{
+        margin: 3rem 0;
+    }
 }
 
 @media(max-width:400px){

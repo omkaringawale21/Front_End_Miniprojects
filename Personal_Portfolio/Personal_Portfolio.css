@@ -429,6 +429,107 @@ section{
 
 /* Project Session Ends */
 
+/* Contact Session Starts */
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 2rem;
+    margin: 2rem;
+    margin-bottom: 4rem;
+}
+
+.contact .row form .box{
+    padding: 1.5rem;
+    margin: 1rem 0;
+    background: rgba(117, 115, 115, 0.226);
+    color: var(--black);
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+    border-radius: 5px;
+    border: 0.1rem solid var(--black);
+}
+
+.contact .row form .box::placeholder{
+    text-transform: capitalize;
+    color: var(--black);
+}
+
+.contact .row form .message{
+    height: 15rem;
+    resize: none;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1rem 0;
+    font-weight: normal;
+    font-weight: 500;
+}
+
+.contact .row .content .info h3 i{
+    padding-right: 1rem;
+    color: var(--yellow);
+}
+
+.contact .row .content button{
+    position: absolute;
+    width: 170px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    background: var(--black);
+    color: var(--white);
+}
+
+.contact .row .content button:hover{
+    background: var(--white);
+    color: var(--black);
+    cursor: pointer;
+}
+
+.contact .row form button{
+    position: relative;
+    width: 170px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    background: var(--black);
+    color: var(--white);
+}
+
+.contact .row form button:hover{
+    background: var(--white);
+    color: var(--black);
+    cursor: pointer;    
+}
+
+/* Contact Session Ends */
 
 /* Media Query */
 @media(max-width: 1200px){
@@ -490,6 +591,17 @@ section{
     .about .info-container .image{
         order: -1;
     }
+
+    .contact .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact .row .content{
+        margin-bottom: 18px;
+    }
+
 }
 
 @media(max-width: 450px){
@@ -497,5 +609,3 @@ section{
         font-size: 50%;
     }
 }
-
-

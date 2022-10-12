@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Product UI Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="ProductLandingUI.css" ></link>
+    </head>
+    <body>
+
+        <header>
+            <a href="#" class="logo">Adidas</a>
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Category</a>
+                <a href="#">Products</a>
+                <a href="#">Blogs</a>
+            </nav>
+        </header>
+
+        <section class="container">
+            <div class="content">
+                <h3>New Adidas Shoes</h3>
+                <p>Excellent apperence, looking good, one year garenty, multyfunctionality like treaking, running, normal office work.</p>
+                <a href="#" class="btn" >add to cart</a>
+            </div>
+            <div class="image">
+                <img class="shoes active" src="adimg1.webp">
+                <img class="shoes" src="adimg2.webp">
+                <img class="shoes" src="adimg3.webp">
+                <img class="shoes" src="adimg4.webp">
+            </div>
+            <div class="left" onclick="prev()" > < </div>
+            <div class="right" onclick="next()" > > </div>
+        </section>
+
+        <script src="ProductLandingUI.js"></script>
+    </body>
+</html>
