@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Recursive Function</title>
+    <style>
+        #changeBg{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 5rem;
+            height: 2.5rem;
+            font-size: 1.2rem;
+            cursor: pointer;
+            color: #ffffff;
+            background: #fd6b09;
+            border: none;
+            border-radius: 0.5rem;
+        }
+
+        #removeExtraSpacesField, #countLength{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 2rem;
+            width: 13rem;
+            outline: none;
+            font-size: 1.2rem;
+        }
+
+        #removeExtraSpaces, #countLengthBtn{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 5rem;
+            height: 2.5rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            color: #ffffff;
+            background: #fd6b09;
+        }
+    </style>
+</head>
+<body>
+    <!-- 2. On btn click change the bg-color of the input field and on every click count the number how many times I have clicked (Use event listener).  -->
+    <div>
+        <input type="button" value="Click" id="changeBg" >
+    </div>
+    <hr>
+
+    <!-- 3. Remove extra spaces form string which we have entered in to the input box (Use event listener). -->
+    <div>
+        <input type="text" value="Hello" id="removeExtraSpacesField" >
+        <input type="button" value="Submit" id="removeExtraSpaces" >
+    </div>
+    <hr>
+
+    <!-- 4. count the word length and character length which I have entered into the input (Use event listener). -->
+    <div>
+        <input type="text" value="Hello World" id="countLength" onkeyup="countChars(this);" >
+        <input type="button" value="Submit" id="countLengthBtn" >
+    </div>
+    <hr>
+
+    <script src="script.js" ></script>
+</body>
+</html>

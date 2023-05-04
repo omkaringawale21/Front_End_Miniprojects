@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Reduce Method</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        #box{
+            height: 30rem;
+            width: 30rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transform: translate(0, 18%);
+            overflow: hidden;
+            border: 0.1rem solid rgba(0, 0, 0, 0.3);
+        }
+        #box img{
+            width: 28rem;
+            height: 28rem;
+            border-radius: 0.5rem;
+        }
+        #box h3{
+            padding: 0.5rem 0;
+            font-size: 2rem;
+            color: black;
+        }
+        #box p{
+            padding: 0.5rem 0;
+            font-size: 1.7rem;
+            color: black;
+        }
+        #box:hover{
+            background: #f7e47a;
+        }
+        #box:hover img,
+        #box:hover h3,
+        #box:hover p{
+            transition: 0.5s linear;
+            transform: translateY(-30rem);
+        }
+        #box:hover h3,
+        #box:hover p{
+            transition: 0.5s linear;
+            transform: translateY(-19rem);
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="row" >
+            <div class="col" >
+                <div id="box" class="card text-center" ></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>

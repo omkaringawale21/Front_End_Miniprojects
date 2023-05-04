@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Project Website</title>
+    <!-- Custom Google Font CDN Links -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!-- Custom Font Awesome CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Bootstrap CSS Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS File Links -->
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <!-- Header Section Starts -->
+    <header class="header" >
+        <a href="../contact/index.html" class="logo" >flattern</a>
+        <nav class="navbar" >
+            <a href="../home/index.html" >home</a>
+            <a href="../about/index.html" >about</a>
+            <a href="#" >services</a>
+            <a href="#" >testimonials</a>
+            <a href="#" >pricing</a>
+            <a href="#" >portfolio</a>
+            <a href="#" >blog</a>
+            <a href="#" id="down-btn" >dropdown<i class="fa-solid fa-caret-down"></i></a>
+            <div class="drop-box" >
+                <a href="" >dropdown1</a>
+                <a href="" >dropdown2</a>
+                <a href="" >dropdown3</a>
+                <a href="" >dropdown4</a>
+            </div>
+            <a href="../contact/index.html" >contact</a>
+        </nav>
+        <div class="fas fa-bars" id="menu-bar" ></div>
+    </header>
+    <!-- Header Section Ends -->
+    <!-- Contact Section Starts -->
+    <main>
+        <section class="box-container-frist bg-dark" >
+            <div class="container-fluid" >
+                <div class="row" >
+                    <div class="col" >
+                        <h2>contact</h2>
+                    </div>
+                    <div class="col" >
+                        <h3><span>home</span> / contact</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="box-container-second" >
+            <div class="container-fluid" >
+                <div class="row" >
+                    <div class="col" >
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24194.891570590225!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sbg!4v1666856770667!5m2!1sen!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="box-container-third" >
+            <div class="container-fluid" >
+                <div class="row" >
+                    <div class="col d-flex justify-content-center box p-2" >
+                        <div class="content" >
+                            <h3><i class="fa-solid fa-location-dot"></i>location:</h3>
+                            <p id="frist-info" >A108 Adam Street<br>
+                                New York, NY 535022</p>
+                        </div>
+                        <div class="content" >
+                            <h3 id="email-heading" ><i class="fa-solid fa-envelope" id="email-icon" ></i>email:</h3>
+                            <p id="second-info" >info@example.com<br>
+                                contact@example.com</p>
+                        </div>
+                        <div class="content" >
+                            <h3 id="call-heading" ><i class="fa-solid fa-mobile-screen-button" id="email-call" ></i>call:</h3>
+                            <p id="third-info" >+1 5589 55488 51<br>
+                                +1 5589 22475 14</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper text-center" >
+                    <div class="row p-2 level" >
+                        <div class="col col-lg pb-2" >
+                            <input type="text" class="form-control" placeholder="Your Name" >
+                        </div>
+                        <div class="col" >
+                            <input type="text" class="form-control" placeholder="Your Email" >
+                        </div>
+                    </div>
+                    <div class="row p-2" >
+                        <div class="col" >
+                            <input type="text" class="form-control" placeholder="Subject" >
+                        </div>
+                    </div>
+                    <div class="row p-2" >
+                        <div class="col" >
+                            <textarea class="form-control" id="validationTextarea" rows="10" cols="12" placeholder="Message" ></textarea>
+                        </div>
+                    </div>
+                    <div class="row p-2" >
+                        <div class="col" >
+                            <a href="#" class="btn" >Send Message</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Contact Section Ends -->
+    <!-- Footer Section Starts -->
+    <footer class="footer" >
+        <div class="row" >
+            <div class="content" >
+                <h3>flattern</h3>
+                <p>
+                    A108 Adam Street<br>
+                    New York, NY 535022<br>
+                    United States
+                </p>
+                <p>Phone: +1 5589 55488 55</p>
+                <p>Email: info@example.com</p>  
+            </div>
+            <div class="useful-links" >
+                <h3>useful links</h3>
+                <a href="../home/index.html"><i class="fa-solid fa-chevron-right"></i>home</a>
+                <a href="#" ><i class="fa-solid fa-chevron-right"></i>about us</a>
+                <a href="#" ><i class="fa-solid fa-chevron-right"></i>services</a>
+                <a href="#" ><i class="fa-solid fa-chevron-right"></i>terms of services</a>
+                <a href="#" ><i class="fa-solid fa-chevron-right"></i>privacy policy</a>
+            </div>
+            <div class="services" >
+                <h3>our services</h3>
+                <a href="#"><i class="fa-solid fa-chevron-right"></i>web design</a>
+                <a href="#" ><i class="fa-solid fa-chevron-right"></i>web development</a>
+                <a href="#" ><i class="fa-solid fa-chevron-right"></i>product management</a>
+                <a href="#" ><i class="fa-solid fa-chevron-right"></i>marketing</a>
+                <a href="#" ><i class="fa-solid fa-chevron-right"></i>graphic design</a>
+            </div>
+            <div class="subscribe" >
+                <h3>join our newsletter</h3>
+                <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                <div class="input-box" >
+                    <input type="text" ><a href="#" class="btn" >subscribe</a>
+                </div>
+            </div>
+        </div>
+        <div class="text" >
+            <div class="box" >
+                <div class="content" >
+                    <p>@ copyrights <span>flattern.</span> all rights reserved</p>
+                    <p>designed by <span>bootstrapmade</span></p>
+                </div>
+                <div class="icons" >
+                    <a href="#" class="fa-brands fa-square-facebook" ></a>
+                    <a href="#" class="fa-brands fa-square-instagram" ></a>
+                    <a href="#" class="fa-brands fa-square-twitter" ></a>
+                    <a href="#" class="fa-brands fa-square-github" ></a>
+                    <a href="#" class="fa-brands fa-square-google-plus" ></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section Ends -->
+    <!-- Custom Bootstrap JavaScript Links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript File Links -->
+    <script src="script.js" ></script>
+</body>
+</html>

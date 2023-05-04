@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Event Assignment</title>
+    <style>
+        .droptarget {
+            float: left;
+            width: 100px; 
+            height: 35px;
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+        #outterDiv{
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            cursor: pointer;
+        }
+        #innerDiv{
+            width: 100px;
+            height: 100px;
+            border: 2px solid blue;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body onload="bodyLoadingFun()" >
+    <!-- 1. pageload (onload) event apply (bodyload show alert) -->
+    <!-- 2. create two button (one button apply single click and another button dblclick event) -->
+    <div>
+        <button onclick="singleClick()" >Single Click</button>
+        <button ondblclick="doubleClick()" >Double Click</button>
+    </div>
+    <hr>
+    <!-- 3.paragraph copy event apply -->
+    <div>
+        <img src="coffee-img.jpeg" oncopy="copyFun()" width="200" height="200" alt="coffee-image">
+    </div>
+    <hr>
+    <!-- 4.crete dragable button (it drag whenever body) -->
+    <div>
+        <button id="addDragBtn" >Add draggable</button>
+    </div>
+    <hr>
+    <!-- 5.create addition,sub.multi,divide button and apply  mathematical functionalty -->
+    <div>
+        <input type="text" value="0" id="ip1" ><br><br>
+        <input type="text" value="0" id="ip2" ><br><br>
+        <input type="submit" value="+" id="plus" ><input type="submit" value="-" id="minus" ><input type="submit" value="*" id="into" ><input type="submit" value="/" id="divide" ><br><br>
+        <input type="text" value="+" id="ip3" ><br><br>
+        <button id="btn" >Submit</button>
+        <input type="text" placeholder="Result" id="result" value="0" >
+    </div>
+    <hr>
+    <!-- 6.create mouse effect on two div  -->
+    <div>
+        <div id="outterDiv" onmouseenter="enterMouseOutter()" onmouseleave="leaveMouseOutter()" >
+            <div id="innerDiv" onmouseenter="enterMouseInner()" onmouseleave="leaveMouseInner()" ></div>
+        </div>
+    </div>
+    <hr>
+    <!-- 7.create dragable div (one or more div dragable) -->
+    <div>
+        <div class="droptarget" ondrop="drop(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)">
+            <p ondragstart="dragStart(event)" draggable="true" id="dragtarget">Drag me!</p>
+        </div>
+        <div class="droptarget" ondrop="drop(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondragover="allowDrop(event)"></div>  
+        <p id="demo"></p>
+    </div>
+    <script src="script.js" ></script>
+</body>
+</html>

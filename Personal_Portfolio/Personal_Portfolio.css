@@ -51,6 +51,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid rgba(117, 115, 115, 0.226);
+    box-shadow: 0.5rem 0.4rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .header .logo{
